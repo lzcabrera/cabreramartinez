@@ -42,27 +42,48 @@ $navigation = array(
 
 $services = array(
 	//page
-	array('title'=>'Auditoría Externa',
+	array('title'=>'Auditoría externa',
 	                          'url' => '/servicios/auditoria-externa/',
 	                          'top_nav'=>'false',
 							  'left_nav'=>'true',
 	                           'metadesc'=>'',
 	                           'facebook-like' => false
 										  ),
-	array('title'=>'Auditoría Externa',
+	array('title'=>'Auditoría fiscal',
 						      'url' => '/servicios/auditoria-fiscal/',
 						      'top_nav'=>'false',
 							  'left_nav'=>'true',
 							  'metadesc'=>'',
 						      'facebook-like' => false
 										  ),
-	array('title'=>'Auditoría Interna',
+	array('title'=>'Auditoría interna',
 							  'url' => '/servicios/auditoria-interna/',
 							  'top_nav'=>'false',
 							  'left_nav'=>'true',
 							  'metadesc'=>'',
 							  'facebook-like' => false
-																			  )																			
+								          ),
+	array('title'=>'Due Dilligence',
+						      'url' => '/servicios/due-dilligence/',
+							  'top_nav'=>'false',
+							  'left_nav'=>'true',
+							  'metadesc'=>'',
+							  'facebook-like' => false
+										  ),
+	array('title'=>'Servicios especiales sobre procedimientos previamente acordados',
+							  'url' => '/servicios/especiales-previamente-acordados/',
+							  'top_nav'=>'false',
+							  'left_nav'=>'true',
+							  'metadesc'=>'',
+							  'facebook-like' => false
+										  ),
+	array('title'=>'Impuestos',
+							  'url' => '/servicios/impuestos/',
+							  'top_nav'=>'false',
+							  'left_nav'=>'true',
+							  'metadesc'=>'',
+							  'facebook-like' => false
+										  )																											
 	);
 
 foreach($navigation as $page){
@@ -91,7 +112,7 @@ foreach($navigation as $page){
 		break;
 	}
 }
-$page_title = "";
+$page_title = $_SERVER['REQUEST_URI'];
 $page_url = "";
 $page_like = "";
 $page_meta_description = "";
