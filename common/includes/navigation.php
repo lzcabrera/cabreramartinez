@@ -112,7 +112,7 @@ foreach($navigation as $page){
 		break;
 	}
 }
-$page_title = $_SERVER['REQUEST_URI'];
+$page_title = $_SERVER['REQUEST_URI'].'xxx';
 $page_url = "";
 $page_like = "";
 $page_meta_description = "";
