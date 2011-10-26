@@ -7,6 +7,7 @@
 					<div id="banner">
 						<img src="/img/homepage-banner.png" alt="Cabrera Martínez S.A. de C.V. Contadores Públicos y Auditores">
 					</div>
+					<?php echo phpinfo(); ?>
 			    </div>
 					
 			
