@@ -99,17 +99,64 @@
 				<li><a href="">Quiénes Somos</a></li>
 				<li class="last"><a href="">Contáctenos</a></li>-->
 			</ul>
-
-
+    
 	    </header>
 	
 		<div id="main" role="main">
 				<? if($page_url!='/'){ ?>
 					<h1><?php echo $page_title; ?></h1>
+					
+					
+					
+					
+
+					<?php 
+					
+					
+				function strstr_after($haystack, $needle, $case_insensitive = false) {
+				    $strpos = ($case_insensitive) ? 'stripos' : 'strpos';
+				    $pos = $strpos($haystack, $needle);
+				    if (is_int($pos)) {
+				        return substr($haystack, $pos + strlen($needle));
+				    }
+				    // Most likely false or null
+				    return $pos;
+				}
+					
+	
+					?>
+
+					
+					
+					
 				
 					<ul class="breadcrumbs">
 						<li class="first"><a href="/">Inicio</a></li>
-						<li class="last"><?php echo $page_title; ?></li>		
+						<?php
+						foreach($navigation as $page)
+						{
+
+							if(($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url'])) && $page['url']!='/' ){
+								if($page['url']==$_SERVER['REQUEST_URI'])
+									echo "<li class='last'>" . $page['title'] . "</li>";
+								else
+									echo "<li><a href=".$page['url'].">".$page['title']."</a></li>";
+									
+								if(strstr_after($_SERVER['REQUEST_URI'],$page['url'])){
+									foreach($page['children'] as $subpage){
+										if($subpage['url']==$_SERVER['REQUEST_URI']){
+											echo "<li class='last'>".$subpage['title']."</li>";
+										}
+
+									}
+								}
+
+							}
+
+						}
+						?>
+						
+							
 						<?php if($page_title==''){ ?>
 							<li class="last">page not found</li>	
 						<?php } ?>

@@ -281,7 +281,7 @@ h2{color:#2e6ea4;margin:25px 0 0px 0;}
 #main.subpage .servicio{float:left;width:50%;margin:10px 0 10px 0;}
 #main.subpage .servicio h2, #main.subpage .servicio p{padding-right:20px;}
 .breadcrumbs{margin:0;padding:0;margin-bottom:25px;}
-.breadcrumbs li{list-style-type:disc;float:left;margin-left:5px;}
+.breadcrumbs li{list-style-type:disc;float:left;margin:0 15px 0 5px;}
 .breadcrumbs li.first{list-style-type:none;margin-left:0px;margin-right:15px;}
 .footer{margin-bottom:20px;background:red;}
 .footer-separator{
