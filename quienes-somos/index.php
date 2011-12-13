@@ -48,14 +48,6 @@
 
 
 </div>
-<div class="right-column">
-	<div class="tout">
-	<p>Miembro de</p>
-	<img class="agn-logo" src="/img/agn-logo.png" alt="AGN International">
-	</div>
-	
-</div>
-<div class="clear"></div>
 
-    </div>
+
 <? include($_SERVER['DOCUMENT_ROOT']."/common/includes/bottom.php"); ?>

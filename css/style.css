@@ -257,6 +257,16 @@ h2{color:#2e6ea4;margin:25px 0 0px 0;}
 #navigation li.last a{padding-right:0px;background-image:none;}	
 
 
+ul#left-nav{list-style-type:none;
+	padding:0;margin:0;border-top:1px solid #a2a2a1;margin-right:10px;}
+ul#left-nav li{}
+ul#left-nav li a{display:block;padding:10px 10px 10px 20px;border-bottom:1px solid #a2a2a1; }
+ul#left-nav li a:hover{background:#749bb7;color:#fff;text-decoration:none;}
+
+ul#left-nav li.section a{color:#ffffff; background:#333333;font-weight:bold;padding-left:10px;}
+ul#left-nav li.section a:hover{background:#999999;color:#333333;}
+
+
 
 #contact-info{position:absolute;right:0;
 	text-align:right;
@@ -295,7 +305,14 @@ h2{color:#2e6ea4;margin:25px 0 0px 0;}
 
 .footer .copyright{float:left;width:30%;margin:1em 0;font-size:0.9em;}
 
-
+.left-column{
+	width:20%;float:left;background:xpink;margin-top:15px;
+}
+.middle-column{
+	width:60%;float:left;
+}
+.middle-column #content{margin:0 10px 10px 30px;}
+#main .right-column{width:20%;float:left;}
 
 
 /* ==|== non-semantic helper classes ========================================

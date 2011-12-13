@@ -175,6 +175,24 @@
 					<p>We could not find the page you requested. Please visit our <a href="/sitemap">site map</a> or <a href="/contactenos">contact us</a> if you need help finding the page you are looking for.</p>
 				
 				<?php } ?>
-					
 				
+				<?php if($page_left_nav){ ?>	
+				<div class="left-column">
+					<ul id="left-nav">
+						<?php foreach($navigation as $page){  
+							if(($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url'])) && $page['url']!='/' ){ 
+								
+								echo "<li class='section'><a href='".$page['url']."'>".$page['title']."</a></li>";
+								
+								if(is_array($page['children'])){
+									foreach($page['children'] as $subpage){
+										echo "<li><a href='".$subpage['url']."'>".$subpage['title']."</a></li>";
+									}
+								}
+								
+							} 
+					 	} ?>
+					</ul>
+				</div>
+				<?php } ?>
 				
