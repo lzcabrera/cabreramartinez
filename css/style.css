@@ -315,7 +315,7 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 .full-column .half-column{width:50%;float:left;}
 .middle-column #content{margin:0 10px 10px 30px;}
 #main .right-column{width:20%;float:left;}
-#map_canvas{width:425px;height:400px;}
+#map_canvas{width:425px;height:400px;margin-bottom:50px;}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
