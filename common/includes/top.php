@@ -59,7 +59,7 @@
 	  <?php
 	  $google_map_key ='';
 	  if($_SERVER['SERVER_NAME']=='cabreramartinez.laura-cabrera.com'){// qa
-		$google_map_key='ABQIAAAA7CtUI3fphlVSIVghOUS50RRvC6DAeY-SzzPnTaoD2zBS49neLBSKMLNHwDSWKkAI_HXwcdq91HsBow';
+		$google_map_key='ABQIAAAA7CtUI3fphlVSIVghOUS50RQ1mXl6F_5Mu87D4Nn205UkTY-smxSfOq0S4nlOrWgKamiyUgiHZ0bBbw';
 	  }else if($_SERVER['SERVER_NAME']=='cabreramartinez.dev'){// dev
 		$google_map_key='ABQIAAAA7CtUI3fphlVSIVghOUS50RRTx2QzHMh3VuSya81UP1pWuM0L2hRNAC1lWh9IC5wOg1YDEgGeJ8siIQ';
 	  }else{// live
