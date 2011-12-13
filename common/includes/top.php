@@ -56,6 +56,17 @@
 	       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
 	  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 	
+	  <?php
+	  $google_map_key ='';
+	  if($_SERVER['SERVER_NAME']=='cabreramartinez.laura-cabrera.com'){// qa
+		$google_map_key='ABQIAAAA7CtUI3fphlVSIVghOUS50RRvC6DAeY-SzzPnTaoD2zBS49neLBSKMLNHwDSWKkAI_HXwcdq91HsBow';
+	  }else if($_SERVER['SERVER_NAME']=='cabreramartinez.dev'){// dev
+		$google_map_key='ABQIAAAA7CtUI3fphlVSIVghOUS50RRTx2QzHMh3VuSya81UP1pWuM0L2hRNAC1lWh9IC5wOg1YDEgGeJ8siIQ';
+	  }else{// live
+		$google_map_key='ABQIAAAA7CtUI3fphlVSIVghOUS50RS5RrNXij-aiqpVZQ9jWJtyY29yFBQW3QvoxTwKYFkvAh7CSLJNRBquxA';
+	  }
+	
+	  ?>
 	  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA7CtUI3fphlVSIVghOUS50RRTx2QzHMh3VuSya81UP1pWuM0L2hRNAC1lWh9IC5wOg1YDEgGeJ8siIQ" type="text/javascript"></script>
 	 
 
