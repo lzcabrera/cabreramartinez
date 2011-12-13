@@ -36,17 +36,33 @@
 
 
 <!-- scripts concatenated and minified via ant build script-->
-<script defer src="js/plugins.js"></script>
-<script defer src="js/script.js"></script>
+<script defer src="/js/plugins.js"></script>
+<script defer src="/js/script.js"></script>
 <!-- end scripts-->
 
-<? if($page_url=='/contactenos/'){ ?>
-	<script src="/js/mylibs/map.js"></script>
-<? } ?>
 
-<script>
-	//$(document).ready();
-</script>
+<?php if($_SERVER['REQUEST_URI']=="/contactenos/"){ ?>
+	<script type="text/javascript">
+		var unLoaders=[];  
+	</script>
+  	<script src="/js/mylibs/map.js"></script>
+	<script>
+		$(window).unload(function() {
+		    //alert('Handler for .unload() called.');
+			unload();
+			google.maps.Unload()
+		});
+		
+		$(document).ready(function() {
+		  // Handler for .ready() called.
+		  googleMapInit(map_canvas);
+		});
+	</script>
+  <?    } ?>
+
+
+
+
 
 <!-- Change UA-XXXXX-X to be your site's ID -->
 <script>

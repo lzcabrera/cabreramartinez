@@ -56,13 +56,8 @@
 	       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
 	  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 	
-	
-
-	<!--	
-	<script type="text/javascript">
-		var unLoaders=[];  
-	</script>
-	<script src="/common/javascript/google-maps.js" type="text/javascript"></script>-->
+	  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA7CtUI3fphlVSIVghOUS50RRTx2QzHMh3VuSya81UP1pWuM0L2hRNAC1lWh9IC5wOg1YDEgGeJ8siIQ" type="text/javascript"></script>
+	 
 
 	
 </head>

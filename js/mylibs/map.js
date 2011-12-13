@@ -1,3 +1,7 @@
+// JavaScript Document
+
+
+
 function googleMapInit(map_canvas) {
       if (GBrowserIsCompatible()) {
 		  
@@ -25,7 +29,7 @@ function googleMapInit(map_canvas) {
 		
 		map.addOverlay(marker_pin);
 		
-	//	marker.openInfoWindowHtml(address);
+	    //	marker.openInfoWindowHtml(address);
 		
       }
 	  

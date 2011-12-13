@@ -294,7 +294,7 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 .breadcrumbs{margin:0;padding:0;margin-bottom:40px;}
 .breadcrumbs li{list-style-type:disc;float:left;margin:0 15px 0 5px;}
 .breadcrumbs li.first{list-style-type:none;margin-left:0px;margin-right:15px;}
-.footer{margin-bottom:20px;background:red;}
+.footer{margin-bottom:60px;}
 .footer-separator{
 	height:4px;
 	width:100%;
@@ -303,7 +303,7 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 .footer ul{float:right;}
 .footer ul li{float:left;list-style-type:none;padding:0 10px 0 10px;}
 .footer ul li.last{padding-right:0px;}
-
+.footer ul li a{text-decoration:none;}
 .footer .copyright{float:left;width:30%;margin:1em 0;font-size:0.9em;}
 
 .left-column{
@@ -312,9 +312,10 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 .middle-column{
 	width:60%;float:left;
 }
+.full-column .half-column{width:50%;float:left;}
 .middle-column #content{margin:0 10px 10px 30px;}
 #main .right-column{width:20%;float:left;}
-
+#map_canvas{width:425px;height:400px;}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
