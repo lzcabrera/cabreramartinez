@@ -1,5 +1,18 @@
 <?php
 
+
+function strstr_after($haystack, $needle, $case_insensitive = false) {
+$strpos = ($case_insensitive) ? 'stripos' : 'strpos';
+$pos = $strpos($haystack, $needle);
+if (is_int($pos)) {
+    return substr($haystack, $pos + strlen($needle));
+}
+// Most likely false or null
+return $pos;
+}
+
+
+
 $services = array(
 	//page
 	array('title'=>'Auditoría externa',

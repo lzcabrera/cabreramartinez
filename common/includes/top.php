@@ -87,7 +87,7 @@
 				<? foreach($navigation as $page){ ?>
 					<? if($page['top_nav']=='true'){ ?>
 						
-						<li class="<?=($page['url']==$_SERVER['REQUEST_URI'])?'selected':''?>" >
+						<li class="<?=($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url']) && $page['url']!='/' )?'selected':''?>" >
 							<a href="<?= $page['url'] ?>"><?=$page['title']?></a>
 						</li>
 					<? } ?>
@@ -104,31 +104,7 @@
 	
 		<div id="main" role="main">
 				<? if($page_url!='/'){ ?>
-					<h1><?php echo $page_title; ?></h1>
-					
-					
-					
-					
-
-					<?php 
-					
-					
-				function strstr_after($haystack, $needle, $case_insensitive = false) {
-				    $strpos = ($case_insensitive) ? 'stripos' : 'strpos';
-				    $pos = $strpos($haystack, $needle);
-				    if (is_int($pos)) {
-				        return substr($haystack, $pos + strlen($needle));
-				    }
-				    // Most likely false or null
-				    return $pos;
-				}
-					
-	
-					?>
-
-					
-					
-					
+					<h1><?php echo $page_title; ?></h1>	
 				
 					<ul class="breadcrumbs">
 						<li class="first"><a href="/">Inicio</a></li>
@@ -186,7 +162,7 @@
 								
 								if(is_array($page['children'])){
 									foreach($page['children'] as $subpage){
-										echo "<li><a href='".$subpage['url']."'>".$subpage['title']."</a></li>";
+										echo "<li class='".($subpage['url']==$_SERVER['REQUEST_URI']?'selected':'')."'><a href='".$subpage['url']."'>".$subpage['title']."</a></li>";
 									}
 								}
 								
