@@ -22,7 +22,8 @@ $services = array(
 	                           'metadesc'=>'',
 	                           'facebook-like' => false,
 							   'leftnav' => true,
-							   'rightcol' => true
+							   'rightcol' => true,
+							   'maincol' => 'two-col'
 										  ),
 	array('title'=>'Auditoría fiscal',
 						      'url' => '/servicios/auditoria-fiscal/',
@@ -31,7 +32,8 @@ $services = array(
 							  'metadesc'=>'',
 						      'facebook-like' => false,
 						      'leftnav' => true,
-						      'rightcol' => true
+						      'rightcol' => true,
+							  'maincol' => 'two-col'
 										  ),
 	array('title'=>'Auditoría interna',
 							  'url' => '/servicios/auditoria-interna/',
@@ -40,7 +42,8 @@ $services = array(
 							  'metadesc'=>'',
 							  'facebook-like' => false,
 							  'leftnav' => true,
-							  'rightcol' => true
+							  'rightcol' => true,
+							  'maincol' => 'two-col'
 								          ),
 	array('title'=>'Due Dilligence',
 						      'url' => '/servicios/due-dilligence/',
@@ -49,7 +52,8 @@ $services = array(
 							  'metadesc'=>'',
 							  'facebook-like' => false,
 							  'leftnav' => true,
-							  'rightcol' => true
+							  'rightcol' => true,
+							  'maincol' => 'two-col'
 										  ),
 	array('title'=>'Servicios especiales sobre procedimientos previamente acordados',
 							  'url' => '/servicios/especiales-previamente-acordados/',
@@ -58,7 +62,8 @@ $services = array(
 							  'metadesc'=>'',
 							  'facebook-like' => false,
 							  'leftnav' => true,
-							  'rightcol' => true
+							  'rightcol' => true,
+							  'maincol' => 'two-col'
 										  ),
 	array('title'=>'Impuestos',
 							  'url' => '/servicios/impuestos/',
@@ -67,7 +72,8 @@ $services = array(
 							  'metadesc'=>'',
 							  'facebook-like' => false,
 							  'leftnav' => true,
-							  'rightcol' => true
+							  'rightcol' => true,
+							  'maincol' => 'two-col'
 										  ),
 	array('title'=>'Legalización de sistemas contables',
 							  'url' => '/servicios/legalizacion-sistemas-contables/',
@@ -76,7 +82,8 @@ $services = array(
 							   'metadesc'=>'',
 							   'facebook-like' => false,
 							   'leftnav' => true,
-							   'rightcol' => true
+							   'rightcol' => true,
+							   'maincol' => 'two-col'
 										   ),
 	array('title'=>'Autorización de registros contables',
 							   'url' => '/servicios/autorizacion-registros-contables/',
@@ -85,7 +92,8 @@ $services = array(
 							   'metadesc'=>'',
 							   'facebook-like' => false,
 							   'leftnav' => true,
-								'rightcol' => true
+								'rightcol' => true,
+							    'maincol' => 'two-col'
 										    )		
 										
 										
@@ -99,6 +107,7 @@ $navigation = array(
 	'facebook-like' =>false,
 	'leftnav' => false,
 	'rightcol' => false,
+	'maincol' => 'full-col',
 	'children' => null),
 	
 	//page
@@ -107,6 +116,7 @@ $navigation = array(
 	'facebook-like' =>false,
 	'leftnav' => true,
 	'rightcol' => true,
+	'maincol' => 'two-col',
 	'children' => $services),
 	
 	//page
@@ -115,6 +125,7 @@ $navigation = array(
 	'facebook-like' =>false,
 	'leftnav' => false,
 	'rightcol' => true,
+	'maincol' => 'full-col',
 	'children' => null),
 	
 	//page
@@ -123,6 +134,7 @@ $navigation = array(
 	'facebook-like' =>false,
 	'leftnav' => false,
 	'rightcol' => false,
+	'maincol' => 'full-col',
 	'children' => null),
 	
 	//page
@@ -131,12 +143,14 @@ $navigation = array(
 	'facebook-like' =>false,
 	'leftnav' => false,
 	'rightcol' => false,
+	'maincol' => 'full-col',
 	'children' => null),
 	array('title'=>'Mapa del Sitio','url'=>'/mapa-del-sitio/','top_nav'=>'false','left_nav'=>'false',
 	'metadesc'=>'Mapa del Sitio',
 	'facebook-like' =>false,
 	'leftnav' => false,
 	'rightcol' => false,
+	'maincol' => 'full-col',
 	'children' => null),	
 	
 	);
@@ -151,6 +165,7 @@ foreach($navigation as $page){
 		$page_meta_description = $page['metadesc'];
 		$page_left_nav = $page['leftnav'];
 		$page_right_col = $page['rightcol'];
+		$page_width = $page['maincol'];
 		break;
 	}else if(is_array($page['children'])){
 		
@@ -162,6 +177,7 @@ foreach($navigation as $page){
 				$page_meta_description = $subpage['metadesc'];
 				$page_left_nav = $page['leftnav'];
 				$page_right_col = $page['rightcol'];
+				$page_width = $page['maincol'];
 				break;
 			}
 		}

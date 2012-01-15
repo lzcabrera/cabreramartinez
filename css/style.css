@@ -258,7 +258,7 @@ h2{color:#2e6ea4;margin:25px 0 0px 0;}
 
 
 ul#left-nav{list-style-type:none;
-	padding:0;border-top:1px solid #a2a2a1;margin:0 10px 40px 0;}
+	padding:0;border-top:1px solid #a2a2a1;margin:0 0px 40px 0;}
 ul#left-nav li{}
 ul#left-nav li a{display:block;padding:10px 10px 10px 20px;border-bottom:1px solid #a2a2a1; }
 ul#left-nav li.selected a{font-weight:bold;color:#333333;}
@@ -278,7 +278,9 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 	padding-left:20px;}
 
 #main{
-	margin:35px 0 35px 0;
+	margin:0;
+	float:left;
+	width:100%;
 }
 #main.subpage{margin:15px 0 15px 0;}
 
@@ -291,9 +293,10 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 
 #main.subpage .servicio{float:left;width:50%;margin:10px 0 10px 0;}
 #main.subpage .servicio h2, #main.subpage .servicio p{padding-right:20px;}
-.breadcrumbs{margin:0;padding:0;margin-bottom:40px;}
-.breadcrumbs li{list-style-type:disc;float:left;margin:0 15px 0 5px;}
-.breadcrumbs li.first{list-style-type:none;margin-left:0px;margin-right:15px;}
+#main.two-col{width:720px;}
+.breadcrumbs{margin:0;padding:0;margin-bottom:20px;clear:both;}
+.breadcrumbs li{list-style-type:none;margin:0 7px 0 0px;display:inline;background:url(/img/breadcrumb-separator.png) no-repeat 0px 5px;padding:0 0 0 17px;}
+.breadcrumbs li.first{list-style-type:none;margin-left:0px;margin-right:7px;background:none;padding-left:0px}
 .footer{margin-bottom:60px;}
 .footer-separator{
 	height:4px;
@@ -307,15 +310,17 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 .footer .copyright{float:left;width:30%;margin:1em 0;font-size:0.9em;}
 
 .left-column{
-	width:20%;float:left;background:xpink;margin-top:15px;
+	width:20%;float:left;background:xpink;margin-top:23px;
 }
 .middle-column{
-	width:60%;float:left;
+	width:80%;float:left;
 }
 .full-column .half-column{width:50%;float:left;}
 .middle-column #content{margin:0 10px 10px 30px;}
+#main > h1, #main .breadcrumbs{margin-left:30px;}
+#main.full-col > h1, #main.full-col .breadcrumbs{margin-left:0}
 #main .right-column{width:20%;float:left;}
-#map_canvas{width:425px;height:400px;margin-bottom:50px;}
+#map_canvas{width:450px;height:450px;margin-bottom:50px;}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

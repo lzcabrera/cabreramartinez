@@ -1,14 +1,14 @@
 <?php if($page_right_col){ ?>
 	<div class="right-column">
 		<div class="tout">
-			<p>Miembro de</p>
+			<p>Miembros de</p>
 			<a href="http://www.agn.org/" target="_blank"><img class="agn-logo" src="/img/agn-logo.png" alt="AGN International"></a>
 		</div>
 	</div>
 <?php } ?>
 	<div class="clear"></div>
 </div><!-- main -->
-
+<div class="clear"></div>
 
 <footer>
 	<div class="footer">

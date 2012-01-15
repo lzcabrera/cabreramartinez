@@ -93,7 +93,7 @@
 				<? foreach($navigation as $page){ ?>
 					<? if($page['top_nav']=='true'){ ?>
 						
-						<li class="<?=($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url']) && $page['url']!='/' )?'selected':''?>" >
+						<li class="<?=($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url']) && $page['url']!='/' )?'selected':''?> <?=($page['url']!=='/contactenos/')?:'last'?>" >
 							<a href="<?= $page['url'] ?>"><?=$page['title']?></a>
 						</li>
 					<? } ?>
@@ -108,7 +108,31 @@
     
 	    </header>
 	
-		<div id="main" role="main">
+		<?php if($page_left_nav){ ?>	
+			<div class="left-column">
+				<ul id="left-nav">
+					<?php foreach($navigation as $page){  
+						if(($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url'])) && $page['url']!='/' ){ 
+						
+							echo "<li class='section'><a href='".$page['url']."'>".$page['title']."</a></li>";
+						
+							if(is_array($page['children'])){
+								foreach($page['children'] as $subpage){
+									echo "<li class='".($subpage['url']==$_SERVER['REQUEST_URI']?'selected':'')."'><a href='".$subpage['url']."'>".$subpage['title']."</a></li>";
+								}
+							}
+						
+						} 
+				 	} ?>
+				</ul>
+			</div>
+		<?php } ?>
+		
+		
+		<div id="main" role="main" class="<?=$page_width?>" xstyle="float:left;width:720px;">
+			
+			
+			
 				<? if($page_url!='/'){ ?>
 					<h1><?php echo $page_title; ?></h1>	
 				
@@ -158,23 +182,5 @@
 				
 				<?php } ?>
 				
-				<?php if($page_left_nav){ ?>	
-				<div class="left-column">
-					<ul id="left-nav">
-						<?php foreach($navigation as $page){  
-							if(($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url'])) && $page['url']!='/' ){ 
-								
-								echo "<li class='section'><a href='".$page['url']."'>".$page['title']."</a></li>";
-								
-								if(is_array($page['children'])){
-									foreach($page['children'] as $subpage){
-										echo "<li class='".($subpage['url']==$_SERVER['REQUEST_URI']?'selected':'')."'><a href='".$subpage['url']."'>".$subpage['title']."</a></li>";
-									}
-								}
-								
-							} 
-					 	} ?>
-					</ul>
-				</div>
-				<?php } ?>
+				
 				
