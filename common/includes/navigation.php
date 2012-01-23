@@ -146,13 +146,13 @@ $navigation = array(
 	'children' => $contactenos),
 	
 	//page
-	array('title'=>'Aviso Legal','url'=>'/aviso-legal/','top_nav'=>'false','left_nav'=>'false',
+	/*array('title'=>'Aviso Legal','url'=>'/aviso-legal/','top_nav'=>'false','left_nav'=>'false',
 	'metadesc'=>'Aviso Legal',
 	'facebook-like' =>false,
 	'leftnav' => false,
 	'rightcol' => false,
 	'maincol' => 'full-col',
-	'children' => null),
+	'children' => null),*/
 	array('title'=>'Mapa del Sitio','url'=>'/mapa-del-sitio/','top_nav'=>'false','left_nav'=>'false',
 	'metadesc'=>'Mapa del Sitio',
 	'facebook-like' =>false,
