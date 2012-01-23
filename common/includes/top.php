@@ -34,7 +34,7 @@
 	<meta name="keywords" content="Cabrera Martinez S.A. de C.V., Mario Cabrera, Mario Humberto Cabrera Martinez, Cabrera Martínez San Salvador, El Salvador, Cabrera Martinez El Salvador, Auditoria en El Salvador, San Salvador Auditoria, San Salvador Auditoría, Expertos en Auditoria en El Salvador, AGN El Salvador, Contaduria Publica San Salvador, Auditores en San Salvador, Contaduría Pública en El Salvador" />
 	<meta name="google-site-verification" content="HSXE-XlLPj0krD0_6Mszi-icF6NvgAT1OpWu-OXPh-U" />
 	<meta name="author" content="funnelcity.com">
-	<link rel="icon" href="/img/interface/favicon.png" type="image/png" /> 
+	<link type="image/x-icon" href="/img/favicon.ico" rel="shortcut icon">
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
