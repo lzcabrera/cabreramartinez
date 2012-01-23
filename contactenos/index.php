@@ -2,9 +2,21 @@
 require_once($_SERVER['DOCUMENT_ROOT']."/common/includes/recaptchalib.php");
 include($_SERVER['DOCUMENT_ROOT']."/common/includes/top.php");
 
-$publickey = "6LcCqcwSAAAAAL7zApL40ZErRQDjgjeKQcXr3PsY";
-?>
+$publickey = "";
 
+switch ($_SERVER['SERVER_NAME']) {
+    case "cabreramartinez.dev":
+        $publickey = "6LcCqcwSAAAAAL7zApL40ZErRQDjgjeKQcXr3PsY";
+        break;
+    case "laura-cabrera.com":
+        $publickey = "6LcUqcwSAAAAAPZNLOVjTHPcW8Zz_CdjnQNW5Cge";
+        break;
+    case "cabreramartinez.com":
+        $publickey = "6LdJp8wSAAAAAApv3cyEkKO_oQhXypoo7jqu4fuh";
+        break;
+}
+
+?>
 		
 <div class="full-column">
 	
@@ -20,6 +32,7 @@ $publickey = "6LcCqcwSAAAAAL7zApL40ZErRQDjgjeKQcXr3PsY";
 		
 		<div class="separator"></div>
 		
+		<? echo $_SERVER['SERVER_NAME']; ?>
 		<form method="post" action="verify.php">
 		<textfield>
 			<label for="contact_name">Nombre</label> 

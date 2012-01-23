@@ -1,6 +1,5 @@
 <?php
 
-
 function strstr_after($haystack, $needle, $case_insensitive = false) {
 $strpos = ($case_insensitive) ? 'stripos' : 'strpos';
 $pos = $strpos($haystack, $needle);
@@ -10,8 +9,6 @@ if (is_int($pos)) {
 // Most likely false or null
 return $pos;
 }
-
-
 
 $services = array(
 	//page
@@ -94,12 +91,8 @@ $services = array(
 							   'leftnav' => true,
 								'rightcol' => true,
 							    'maincol' => 'two-col'
-										    )		
-										
-										
-																																		
+										    )																																			
 	);
-	
 	
 	$contactenos = array(
 		//page
@@ -171,7 +164,6 @@ $navigation = array(
 	);
 
 
-
 foreach($navigation as $page){
 	if($page['url']==$_SERVER['REQUEST_URI']){
 		$page_title = $page['title'];
@@ -207,10 +199,6 @@ foreach($navigation as $page){
 		break;
 	}
 }
-/*
-$page_title = $_SERVER['REQUEST_URI'];
-$page_url = "";
-$page_like = "";
-$page_meta_description = "";*/
+
 
 ?>

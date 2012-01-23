@@ -28,22 +28,19 @@
 	
 	<title><?php echo $browser_page_title; ?> :: Cabrera Martinez S.A. de C.V.</title>
 	
-
 	<meta name="robots" content="NOODP">
 	
 	<meta name="description" content="<?php echo $page_meta_description; ?>" />
-	<meta name="keywords" content="Cabrera Martinez S.A. de C.V., Mario Cabrera, Mario Humberto Cabrera Martinez, Cabrera Martínez San Salvador, El Salvador, Cabrera Martinez El Salvador, Auditoria en El Salvador, San Salvador Auditoria, San Salvador Auditoría, Expertos en Auditoria en El Salvador, AGN El Salvador, Contaduria Publica San Salvador, Auditores en San Salvador" />
+	<meta name="keywords" content="Cabrera Martinez S.A. de C.V., Mario Cabrera, Mario Humberto Cabrera Martinez, Cabrera Martínez San Salvador, El Salvador, Cabrera Martinez El Salvador, Auditoria en El Salvador, San Salvador Auditoria, San Salvador Auditoría, Expertos en Auditoria en El Salvador, AGN El Salvador, Contaduria Publica San Salvador, Auditores en San Salvador, Contaduría Pública en El Salvador" />
 	<meta name="google-site-verification" content="HSXE-XlLPj0krD0_6Mszi-icF6NvgAT1OpWu-OXPh-U" />
 	<meta name="author" content="funnelcity.com">
 	<link rel="icon" href="/img/interface/favicon.png" type="image/png" /> 
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
-	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 		
-	<!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=<?=$google_API_key?>" type="text/javascript"></script>-->
-
 	<!-- CSS: implied media=all -->
 	  <!-- CSS concatenated and minified via ant build script-->
 	  <link rel="stylesheet" href="/css/style.css">
@@ -69,8 +66,6 @@
 	  ?>
 	  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=<?=$google_map_key?>" type="text/javascript"></script>
 	 
-
-	
 </head>
 <body>
 
@@ -98,12 +93,7 @@
 						</li>
 					<? } ?>
 				<? } ?>
-				
-				<!--<li class="first selected"><a href="">Inicio</a></li>
-				<li><a href="">Servicios</a></li>
-				
-				<li><a href="">Quiénes Somos</a></li>
-				<li class="last"><a href="">Contáctenos</a></li>-->
+	
 			</ul>
     
 	    </header>
@@ -120,8 +110,7 @@
 								foreach($page['children'] as $subpage){
 									echo "<li class='".($subpage['url']==$_SERVER['REQUEST_URI']?'selected':'')."'><a href='".$subpage['url']."'>".$subpage['title']."</a></li>";
 								}
-							}
-						
+							}			
 						} 
 				 	} ?>
 				</ul>
@@ -129,10 +118,8 @@
 		<?php } ?>
 		
 		
-		<div id="main" role="main" class="<?=$page_width?>" xstyle="float:left;width:720px;">
-			
-			
-			
+		<div id="main" role="main" class="<?=$page_width?>">
+
 				<? if($page_url!='/'){ ?>
 					<h1><?php echo $page_title; ?></h1>	
 				
