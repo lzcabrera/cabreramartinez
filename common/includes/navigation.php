@@ -99,6 +99,21 @@ $services = array(
 										
 																																		
 	);
+	
+	
+	$contactenos = array(
+		//page
+		array('title'=>'Confirmación',
+		                          'url' => '/contactenos/verify.php',
+		                          'top_nav'=>'false',
+								  'left_nav'=>'false',
+		                           'metadesc'=>'',
+		                           'facebook-like' => false,
+								   'leftnav' => false,
+								   'rightcol' => true,
+								   'maincol' => 'full-col'
+											  )
+	);
 
 $navigation = array(
 	//page
@@ -135,7 +150,7 @@ $navigation = array(
 	'leftnav' => false,
 	'rightcol' => false,
 	'maincol' => 'full-col',
-	'children' => null),
+	'children' => $contactenos),
 	
 	//page
 	array('title'=>'Aviso Legal','url'=>'/aviso-legal/','top_nav'=>'false','left_nav'=>'false',

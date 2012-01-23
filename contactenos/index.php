@@ -1,4 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT']."/common/includes/top.php"); ?>
+<?php 
+require_once($_SERVER['DOCUMENT_ROOT']."/common/includes/recaptchalib.php");
+include($_SERVER['DOCUMENT_ROOT']."/common/includes/top.php");
+
+$publickey = "6LcCqcwSAAAAAL7zApL40ZErRQDjgjeKQcXr3PsY";
+?>
+
 		
 <div class="full-column">
 	
@@ -11,6 +17,27 @@
 		
 		
 		<p><strong>Telefax:</strong> (503) 2260 - 7836</p>
+		
+		<div class="separator"></div>
+		
+		<form method="post" action="verify.php">
+		<textfield>
+			<label for="contact_name">Nombre</label> 
+			<input type="text" name="contact_name" value="<?=(isset($_POST["contact_name"]))?$_POST["contact_name"]:''?>" />
+		</textfield>
+		<textfield>
+			<label for="contact_email">Correo</label> 
+			<input type="text" name="contact_email" value="<?=(isset($_POST["contact_email"]))?$_POST["contact_email"]:''?>" />
+		</textfield>
+		<textfield>
+			<label for="message">Mensaje</label> 
+			<textarea name="message"><?=(isset($_POST["message"]))?$_POST["message"]:''?></textarea>
+		</textfield>
+		
+		<? echo recaptcha_get_html($publickey); ?>
+		
+		<input type="submit" value="Enviar" name="submit" class="submit">
+		</form>
 	</div>
 	
 	<div class="half-column">
