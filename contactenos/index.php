@@ -27,12 +27,11 @@ switch ($_SERVER['SERVER_NAME']) {
 		Entre 1a Calle Pte. y Al. Juan Pablo II</br>	
 		San Salvador, El Salvador</p>
 		
-		
 		<p><strong>Telefax:</strong> (503) 2260 - 7836</p>
 		
-		<div class="separator"></div>
+		<!--<div class="separator"></div>-->
+		<br/>
 		
-		<? echo $_SERVER['SERVER_NAME']; ?>
 		<form method="post" action="verify.php">
 		<textfield>
 			<label for="contact_name">Nombre</label> 
