@@ -8,7 +8,7 @@ switch ($_SERVER['SERVER_NAME']) {
     case "cabreramartinez.dev":
         $privatekey = "6LcCqcwSAAAAAPR6GpYQt8DAhER1Ns2UQ6Y-vjrf";
         break;
-    case "laura-cabrera.com":
+    case "cabreramartinez.laura-cabrera.com":
         $privatekey = "6LcUqcwSAAAAAByHZopRz0YvPPMSrANjJWIH8rjW";
         break;
     case "cabreramartinez.com":
