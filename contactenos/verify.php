@@ -7,12 +7,15 @@ $privatekey = "";
 switch ($_SERVER['SERVER_NAME']) {
     case "cabreramartinez.dev":
         $privatekey = "6LcCqcwSAAAAAPR6GpYQt8DAhER1Ns2UQ6Y-vjrf";
+		$mailTo = "lzcabrera@gmail.com";
         break;
     case "cabreramartinez.laura-cabrera.com":
         $privatekey = "6LcUqcwSAAAAAByHZopRz0YvPPMSrANjJWIH8rjW";
+		$mailTo = "mario@cabreramartinez.com";
         break;
     case "cabreramartinez.com":
         $privatekey = "6LdJp8wSAAAAADaSDK7jM_fLa3Q8F3v7BwD6ROTv";
+		$mailTo = "mario@cabreramartinez.com"
         break;
 }
 
@@ -39,9 +42,6 @@ switch ($_SERVER['SERVER_NAME']) {
 	
 					if(isset($_POST["contact_name"]) && isset($_POST["contact_email"]) && isset($_POST["message"]) ){
 
-					  		//$mailTo = "mario@cabreramartinez.com";
-							$mailTo = "lzcabrera@gmail.com";
-			
 							$mailFrom = $_POST["contact_email"];
 							$nameFrom = $_POST["contact_name"];
 							$subject = "[cabreramartinez.com] Mensaje enviado desde el website";
