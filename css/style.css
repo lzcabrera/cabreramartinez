@@ -329,6 +329,9 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 .half-column .separator{margin:0px 10px 30px 0;
 padding:0 0 27px 0;
 background:url('/img/navigation-separator.png') repeat-x bottom;}
+.sitemap li{margin:10px;}
+.sitemap > li > a{font-weight:bold;}
+.sitemap ul li{margin:5px;}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

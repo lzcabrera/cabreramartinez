@@ -20,8 +20,8 @@ $services = array(
 	                           'facebook-like' => false,
 							   'leftnav' => true,
 							   'rightcol' => true,
-							   'maincol' => 'two-col'
-										  ),
+							   'maincol' => 'two-col',
+							   'sitemap_hide'=> false),
 	array('title'=>'Auditoría fiscal',
 						      'url' => '/servicios/auditoria-fiscal/',
 						      'top_nav'=>'false',
@@ -30,8 +30,8 @@ $services = array(
 						      'facebook-like' => false,
 						      'leftnav' => true,
 						      'rightcol' => true,
-							  'maincol' => 'two-col'
-										  ),
+							  'maincol' => 'two-col',
+							  'sitemap_hide'=> false),
 	array('title'=>'Auditoría interna',
 							  'url' => '/servicios/auditoria-interna/',
 							  'top_nav'=>'false',
@@ -40,8 +40,8 @@ $services = array(
 							  'facebook-like' => false,
 							  'leftnav' => true,
 							  'rightcol' => true,
-							  'maincol' => 'two-col'
-								          ),
+							  'maincol' => 'two-col',
+							  'sitemap_hide'=> false),
 	array('title'=>'Due Dilligence',
 						      'url' => '/servicios/due-dilligence/',
 							  'top_nav'=>'false',
@@ -50,8 +50,8 @@ $services = array(
 							  'facebook-like' => false,
 							  'leftnav' => true,
 							  'rightcol' => true,
-							  'maincol' => 'two-col'
-										  ),
+							  'maincol' => 'two-col',
+							  'sitemap_hide'=> false),
 	array('title'=>'Servicios especiales sobre procedimientos previamente acordados',
 							  'url' => '/servicios/especiales-previamente-acordados/',
 							  'top_nav'=>'false',
@@ -60,8 +60,8 @@ $services = array(
 							  'facebook-like' => false,
 							  'leftnav' => true,
 							  'rightcol' => true,
-							  'maincol' => 'two-col'
-										  ),
+							  'maincol' => 'two-col',
+							  'sitemap_hide'=> false),
 	array('title'=>'Impuestos',
 							  'url' => '/servicios/impuestos/',
 							  'top_nav'=>'false',
@@ -70,8 +70,8 @@ $services = array(
 							  'facebook-like' => false,
 							  'leftnav' => true,
 							  'rightcol' => true,
-							  'maincol' => 'two-col'
-										  ),
+							  'maincol' => 'two-col',
+							  'sitemap_hide'=> false),
 	array('title'=>'Legalización de sistemas contables',
 							  'url' => '/servicios/legalizacion-sistemas-contables/',
 							   'top_nav'=>'false',
@@ -80,8 +80,8 @@ $services = array(
 							   'facebook-like' => false,
 							   'leftnav' => true,
 							   'rightcol' => true,
-							   'maincol' => 'two-col'
-										   ),
+							   'maincol' => 'two-col',
+							   'sitemap_hide'=> false),
 	array('title'=>'Autorización de registros contables',
 							   'url' => '/servicios/autorizacion-registros-contables/',
 							   'top_nav'=>'false',
@@ -90,8 +90,8 @@ $services = array(
 							   'facebook-like' => false,
 							   'leftnav' => true,
 								'rightcol' => true,
-							    'maincol' => 'two-col'
-										    )																																			
+							    'maincol' => 'two-col',
+							    'sitemap_hide'=> false)																																			
 	);
 	
 	$contactenos = array(
@@ -104,8 +104,8 @@ $services = array(
 		                           'facebook-like' => false,
 								   'leftnav' => false,
 								   'rightcol' => true,
-								   'maincol' => 'full-col'
-											  )
+								   'maincol' => 'full-col',
+							       'sitemap_hide' => true)
 	);
 
 $navigation = array(
@@ -116,6 +116,7 @@ $navigation = array(
 	'leftnav' => false,
 	'rightcol' => false,
 	'maincol' => 'full-col',
+	'sitemap_hide' => false,
 	'children' => null),
 	
 	//page
@@ -125,6 +126,7 @@ $navigation = array(
 	'leftnav' => true,
 	'rightcol' => true,
 	'maincol' => 'two-col',
+	'sitemap_hide' => false,
 	'children' => $services),
 	
 	//page
@@ -134,6 +136,7 @@ $navigation = array(
 	'leftnav' => false,
 	'rightcol' => true,
 	'maincol' => 'full-col',
+	'sitemap_hide' => false,
 	'children' => null),
 	
 	//page
@@ -143,6 +146,7 @@ $navigation = array(
 	'leftnav' => false,
 	'rightcol' => false,
 	'maincol' => 'full-col',
+	'sitemap_hide' => false,
 	'children' => $contactenos),
 	
 	//page
@@ -152,14 +156,17 @@ $navigation = array(
 	'leftnav' => false,
 	'rightcol' => false,
 	'maincol' => 'full-col',
+	'sitemap_hide' => false,
 	'children' => null),*/
+	
 	array('title'=>'Mapa del Sitio','url'=>'/mapa-del-sitio/','top_nav'=>'false','left_nav'=>'false',
 	'metadesc'=>'Mapa del Sitio',
 	'facebook-like' =>false,
 	'leftnav' => false,
 	'rightcol' => false,
 	'maincol' => 'full-col',
-	'children' => null),	
+	'children' => null,
+	'sitemap_hide' => true),	
 	
 	);
 
