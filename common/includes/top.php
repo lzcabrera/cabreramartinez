@@ -93,7 +93,7 @@
 				<? foreach($navigation as $page){ ?>
 					<? if($page['top_nav']=='true'){ ?>
 						
-						<li class="<?=($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url']) && $page['url']!='/' )?'selected':''?> <?=($page['url']!=='/contactenos/')?:'last'?>" >
+						<li class="<?=($page['url']==$_SERVER['REQUEST_URI'] || strstr_after($_SERVER['REQUEST_URI'],$page['url']) && $page['url']!='/' )?'selected':''?> <?=($page['url']!=='/contactenos/')?'':'last'?>" >
 							<a href="<?= $page['url'] ?>"><?=$page['title']?></a>
 						</li>
 					<? } ?>
