@@ -82,7 +82,7 @@
 				San Salvador, El Salvador
 				<div class="telefono">(503) 2260 - 7836</div>
 			</div>
-			<div class="clear"></div>
+			<div class="clear header-spacer"></div>
 			<ul id="navigation">
 				
 				<? foreach($navigation as $page){ ?>
