@@ -33,21 +33,24 @@ switch ($_SERVER['SERVER_NAME']) {
 		<br/>
 		
 		<form method="post" action="verify.php">
-		<textfield>
+		<div class="textfieldgroup">
 			<label for="contact_name">Nombre</label> 
 			<input type="text" name="contact_name" value="<?=(isset($_POST["contact_name"]))?$_POST["contact_name"]:''?>" />
-		</textfield>
-		<div class="clearfix"></div>
-		<textfield>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="textfieldgroup">
 			<label for="contact_email">Correo</label> 
 			<input type="text" name="contact_email" value="<?=(isset($_POST["contact_email"]))?$_POST["contact_email"]:''?>" />
-		</textfield>
-		<div class="clearfix"></div>
-		<textfield>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="textfieldgroup">
 			<label for="message">Mensaje</label> 
 			<textarea name="message"><?=(isset($_POST["message"]))?$_POST["message"]:''?></textarea>
-		</textfield>
-		<div class="clearfix"></div>
+			<div class="clearfix"></div>
+		</div>
+		
 		
 		<? echo recaptcha_get_html($publickey); ?>
 		
