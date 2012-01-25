@@ -322,13 +322,14 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 #main .right-column{width:20%;float:left;}
 #map_canvas{width:450px;height:450px;margin-bottom:50px;}
 .half-column .textfieldgroup{margin:10px 0 10px 0;width:100%;}
-.half-column label{display:block;width:100px;font-weight:bold;float:left;}
+.half-column label{display:block;width:70px;font-weight:bold;float:left;color:#777;}
 .half-column input{width:310px;display:block;float:left;}
-.half-column .submit{width:100px;float:right;margin:15px 135px 30px 0;}
+.half-column .submit{width:100px;float:right;margin:15px 65px 30px 0;}
 .half-column textarea{width:315px;height:100px;display:block;float:left;}
 .half-column .separator{margin:0px 10px 30px 0;
 padding:0 0 27px 0;
 background:url('/img/navigation-separator.png') repeat-x bottom;}
+.half-column .captcha-wrapper{margin-left:70px;}
 .sitemap li{margin:10px;}
 .sitemap > li > a{font-weight:bold;}
 .sitemap ul li{margin:5px;}

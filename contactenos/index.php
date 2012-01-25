@@ -51,8 +51,9 @@ switch ($_SERVER['SERVER_NAME']) {
 			<div class="clearfix"></div>
 		</div>
 		
-		
-		<? echo recaptcha_get_html($publickey); ?>
+		<div class="captcha-wrapper">
+			<? echo recaptcha_get_html($publickey); ?>
+		</div>
 		
 		<input type="submit" value="Enviar" name="submit" class="submit">
 		</form>
