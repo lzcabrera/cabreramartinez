@@ -316,7 +316,7 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 	width:80%;float:left;
 }
 .full-column .half-column{width:50%;float:left;}
-.middle-column #content{margin:0 10px 10px 30px;}
+.middle-column #content{margin:0 10px 40px 30px;}
 #main > h1, #main .breadcrumbs{margin-left:30px;}
 #main.full-col > h1, #main.full-col .breadcrumbs{margin-left:0}
 #main .right-column{width:20%;float:left;}
@@ -333,6 +333,9 @@ background:url('/img/navigation-separator.png') repeat-x bottom;}
 .sitemap li{margin:10px;}
 .sitemap > li > a{font-weight:bold;}
 .sitemap ul li{margin:5px;}
+table.socios{width:100%;margin:20px 0 10px 0;}
+table.socios tr td{width:50%;background:#ececec;text-align:center;}
+table.socios tr td.divider{border-right:dotted 2px #777;}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

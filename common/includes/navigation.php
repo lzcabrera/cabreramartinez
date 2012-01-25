@@ -94,6 +94,31 @@ $services = array(
 							    'sitemap_hide'=> false)																																			
 	);
 	
+	$quienessomos = array(
+		//page
+		array('title'=>'Calificaciones profesionales',
+		                          'url' => '/quienes-somos/calificaciones-profesionales/',
+		                          'top_nav'=>'false',
+								  'left_nav'=>'true',
+		                           'metadesc'=>'',
+		                           'facebook-like' => false,
+								   'leftnav' => true,
+								   'rightcol' => true,
+								   'maincol' => 'two-col',
+							       'sitemap_hide' => false),
+	//page
+	array('title'=>'Calificación internacional',
+								  'url' => '/quienes-somos/calificacion-internacional/',
+								  'top_nav'=>'false',
+								  'left_nav'=>'true',
+								  'metadesc'=>'',
+								  'facebook-like' => false,
+								  'leftnav' => true,
+							      'rightcol' => true,
+								  'maincol' => 'two-col',
+								  'sitemap_hide' => false)						
+	);
+	
 	$contactenos = array(
 		//page
 		array('title'=>'Confirmación',
@@ -133,11 +158,11 @@ $navigation = array(
 	array('title'=>'¿Quiénes Somos?','url'=>'/quienes-somos/','top_nav'=>'true','left_nav'=>'true',
 	'metadesc'=>'',
 	'facebook-like' =>false,
-	'leftnav' => false,
+	'leftnav' => true,
 	'rightcol' => true,
-	'maincol' => 'full-col',
+	'maincol' => 'two-col',
 	'sitemap_hide' => false,
-	'children' => null),
+	'children' => $quienessomos),
 	
 	//page
 	array('title'=>'Contáctenos','url'=>'/contactenos/','top_nav'=>'true','left_nav'=>'true',
