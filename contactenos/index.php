@@ -37,17 +37,17 @@ switch ($_SERVER['SERVER_NAME']) {
 			<label for="contact_name">Nombre</label> 
 			<input type="text" name="contact_name" value="<?=(isset($_POST["contact_name"]))?$_POST["contact_name"]:''?>" />
 		</textfield>
-		<!--<div class="clear"></div>-->
+		<div class="clearfix"></div>
 		<textfield>
 			<label for="contact_email">Correo</label> 
 			<input type="text" name="contact_email" value="<?=(isset($_POST["contact_email"]))?$_POST["contact_email"]:''?>" />
 		</textfield>
-		<div class="clear"></div>
+		<div class="clearfix"></div>
 		<textfield>
 			<label for="message">Mensaje</label> 
 			<textarea name="message"><?=(isset($_POST["message"]))?$_POST["message"]:''?></textarea>
 		</textfield>
-		<!--<div class="clear"></div>-->
+		<div class="clearfix"></div>
 		
 		<? echo recaptcha_get_html($publickey); ?>
 		
