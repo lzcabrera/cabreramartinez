@@ -317,6 +317,7 @@ ul#left-nav li.section a:hover{background:#999999;color:#333333;}
 }
 .full-column .half-column{width:50%;float:left;}
 .middle-column #content{margin:0 10px 40px 30px;}
+.middle-column #content ul li{margin-bottom:10px;}
 #main > h1, #main .breadcrumbs{margin-left:30px;}
 #main.full-col > h1, #main.full-col .breadcrumbs{margin-left:0}
 #main .right-column{width:20%;float:left;}
