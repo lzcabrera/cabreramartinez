@@ -8,6 +8,12 @@ This is a php website, so if you want to run this locally, you just need a webse
 
 That should get it running locally so you can test it.  
 
+## Tests and Support ##
+
+The site has been tested and works on FF, Chrome, Safari, IE 7+.
+
+f you would like to report a bug, please see the [issues page](https://github.com/lzcabrera/cabreramartinez/issues "issues page").
+
 ## Contributing ##
 
 Fork this project, make a change, push to a named branch on GitHub and send me a pull request.
