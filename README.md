@@ -1,6 +1,6 @@
 ## Cabrera Martinez Website ##
 
-This is the source for the Cabrera Martinez S.A. de C.V. website, found at [cabreramartinez.com](http://cabreramartinez.com "cabreramartinez.com").
+This is the source for the Cabrera Martinez S.A. de C.V. website, it will be found at [cabreramartinez.com](http://cabreramartinez.com "cabreramartinez.com").
 
 ## Running It ##
 
@@ -12,7 +12,7 @@ That should get it running locally so you can test it.
 
 The site has been tested and works on FF, Chrome, Safari, IE 7+.
 
-f you would like to report a bug, please see the [issues page](https://github.com/lzcabrera/cabreramartinez/issues "issues page").
+If you would like to report a bug, please see the [issues page](https://github.com/lzcabrera/cabreramartinez/issues "issues page").
 
 ## Contributing ##
 
