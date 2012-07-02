@@ -15,7 +15,7 @@ switch ($_SERVER['SERVER_NAME']) {
         break;
     case "cabreramartinez.com":
         $privatekey = "6LdJp8wSAAAAADaSDK7jM_fLa3Q8F3v7BwD6ROTv";
-		$mailTo = "mario@cabreramartinez.com"
+		$mailTo = "mario@cabreramartinez.com";
         break;
 }
 
