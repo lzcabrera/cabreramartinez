@@ -38,7 +38,7 @@
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-
+	<meta name="google-site-verification" content="NkpvNaNpcs9kQ6NoZC9tCGE5CewBaIukY6ms5zbUsUY" />
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 		
 	<!-- CSS: implied media=all -->
